@@ -14,6 +14,7 @@ return [
 
     'api_key' => env('OPENAI_API_KEY'),
     'organization' => env('OPENAI_ORGANIZATION'),
+    'model' => env('OPENAI_MODEL', 'gpt-4o'),
 
     /*
     |--------------------------------------------------------------------------
@@ -25,4 +26,7 @@ return [
     */
 
     'request_timeout' => env('OPENAI_REQUEST_TIMEOUT', 30),
+
+    'azure_api_key' => env('AZURE_OPENAI_API_KEY'),
+    'azure_deployment' => env('AZURE_OPENAI_DEPLOYMENT', 'gpt-4o'),
 ];

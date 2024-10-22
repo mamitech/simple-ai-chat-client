@@ -58,7 +58,6 @@
                     url: '/chat/message',
                     method: 'POST',
                     data: {
-                        _token: "{{ csrf_token() }}",
                         message: message,
                     },
                     success: function(response) {
@@ -74,9 +73,6 @@
             $.ajax({
                 url: '/chat/clear',
                 method: 'POST',
-                data: {
-                    _token: "{{ csrf_token() }}",
-                },
                 success: function(response) {
                     loadChat(); // Reload chat messages to show empty box
                 }

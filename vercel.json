@@ -18,6 +18,7 @@
         "APP_ROUTES_CACHE": "/tmp/routes.php",
         "APP_SERVICES_CACHE": "/tmp/services.php",
         "VIEW_COMPILED_PATH": "/tmp/views",
+        "SESSION_FILES_PATH": "/tmp",
         "SSR_TEMP_PATH": "/tmp/ssr",
         "NODE_PATH": "node"
     }
